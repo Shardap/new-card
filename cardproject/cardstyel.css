@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+    text-align: center;
+}
+
+.container {
+    min-height: 400px;
+    width: 800px;
+    background:yellow;
+    overflow: hidden;
+}
+
+.container nav {
+    margin: 20px 10px;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.container nav ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #a6a39f;
+    padding: 10px 10px;
+    transition: 0.5s ease;
+    font-size: 12px;
+}
+
+.container .main ,
+.container nav ul li a:hover {
+    color: #000;
+    background: #fef8eb;
+}
+
+.container .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.container .content div {
+    min-height: 250px;
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 30px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container .content div img {
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.content div h4 {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0px;
+}
+
+.content div p {
+    font-size: 15px;
+    color: #555;
+}
+
+.container .btn {
+    margin: 20px 0px;
+}
+
+.container .btn button {
+    padding: 15px 30px;
+    border: 0;
+    outline: none;
+    background: #eb6649;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 2px 1px #ca7f6e;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: auto;
+        margin: 30px;
+    }
+}
+
